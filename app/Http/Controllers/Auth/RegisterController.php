@@ -33,7 +33,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/pendaftaranMutasis';
+    protected $redirectTo = '/profil';
 
 
     /**
@@ -90,13 +90,13 @@ class RegisterController extends Controller
             $user->assignRole('pegawai');
 
             $nip = $data['nip'];
-
+            // dd($nip);
             Pegawai::create([
                 'user_id' => $user->id,
                 'nip' => $nip,
-                'date_of_birth' => substr($nip, 0, 8),
-                'tanggal_masuk' => (int)substr($nip, 8, 6) . '01',
-                'jenis_kelamin' => substr($nip, 14, 1) == 1 ? 'pria' : 'wanita'
+                // 'date_of_birth' => ,
+                // 'tanggal_masuk' => (int)substr($nip, 8, 6) . '01',
+                // 'jenis_kelamin' => substr($nip, 14, 1) == 1 ? 'pria' : 'wanita'
             ]);
 
         }, 3);

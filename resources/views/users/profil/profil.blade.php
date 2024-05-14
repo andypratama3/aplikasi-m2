@@ -49,6 +49,7 @@
                                         <tr>
                                             <td class="p-1">Tanggal Lahir</td>
                                             <td class="p-1">:</td>
+
                                             <td class="p-1">{{ $user?->pegawai?->date_of_birth?->format('d F Y') }}</td>
                                         </tr>
                                         <tr>

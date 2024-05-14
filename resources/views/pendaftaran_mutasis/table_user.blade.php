@@ -22,10 +22,13 @@
                         <td>{{ $pendaftaranMutasi->jabatan_asal }}</td>
                         <td>{{ $pendaftaranMutasi->asalInstansi->nama ?? '' }}</td>
                         {{-- <td>{{ $pendaftaranMutasi->unit_kerja_asal }}</td> --}}
-                        {{-- <td>{{ $pendaftaranMutasi->jabatan_tujuan }}</td> --}}
+                        <td>{{ $pendaftaranMutasi->jabatan_tujuan }}</td>
                         <td>{{ $pendaftaranMutasi->tujuanInstansi->nama ?? '' }}</td>
-                        <td>{{ $pendaftaranMutasi->unit_kerja_tujuan }}</td>
+
                         <td>{{  $pendaftaranMutasi->alasan_mutasi }}</td>
+                        {{-- <td>{{ $pendaftaranMutasi->unit_kerja_tujuan }}</td>
+                        <td>{{ $pendaftaranMutasi->tujuanInstansi->nama ?? '' }}</td>
+                        <td>{{  $pendaftaranMutasi->alasan_mutasi }}</td> --}}
                         <td>
                             <a class='btn btn-primary text-white btn-sm d-block mb-1'>
                                 {{ $pendaftaranMutasi->status }}

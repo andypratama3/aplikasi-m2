@@ -80,6 +80,7 @@ class PendaftaranMutasi extends Model implements HasMedia, FromCollection, WithH
 
     public function collection()
     {
+        
         return PendaftaranMutasi::all();
     }
 
@@ -254,5 +255,5 @@ class PendaftaranMutasi extends Model implements HasMedia, FromCollection, WithH
                 break;
         }
     }
-    
+
 }
